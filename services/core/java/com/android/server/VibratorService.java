@@ -667,10 +667,10 @@ public class VibratorService extends IVibratorService.Stub
                     // them.  However it may happen that the system is currently playing
                     // haptic feedback as part of the transition.  So we don't cancel
                     // system vibrations.
-                    if (mCurrentVibration != null
-                            && !mCurrentVibration.isSystemHapticFeedback()) {
-                        doCancelVibrateLocked();
-                    }
+//                    if (mCurrentVibration != null
+//                            && !mCurrentVibration.isSystemHapticFeedback()) {
+//                        doCancelVibrateLocked();
+//                    }
 
                     // Clear all remaining vibrations.
                     Iterator<Vibration> it = mVibrations.iterator();
